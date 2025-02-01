@@ -1,0 +1,24 @@
+
+body {
+  background-color: #FAFAFA;
+  color: #1C0A00s;
+  font-family: cursive;
+  font-size: 80%;
+  line-height: normal;
+
+}
+h1 {
+  color:  #AE431E;
+}
+a:link {
+   text-decoration: none;
+}
+h3 {
+  color:  #AE431E;
+}
+hr {
+  border-style: solid;
+  border-color: blue;
+  width: 40%;
+
+}

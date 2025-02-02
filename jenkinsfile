@@ -1,0 +1,17 @@
+pipeline {
+    agent any
+    stages {
+        stage('SCM Checkout') {
+            steps {
+                git branch: 'main', url: 'https://github.com/dipanshur/webserver-deployment-1pm-December.git'
+                credentialsId: '16856fa6-e38a-4867-a5e6-229c84becb92'
+            }
+        }
+
+        stage('Publish Over SSH') {
+            steps {
+                sshPublisher(publishers: [sshPublisherDesc(configName: 'webserver', transfers: [sshTransfer(excludes: '', execCommand: '', execTimeout: 120000, flatten: true, makeEmptyDirs: false, noDefaultExcludes: false, patternSeparator: '[, ]+', remoteDirectory: '/var/www/html/', remoteDirectorySDF: false, removePrefix: '', sourceFiles: '**/*')], usePromotionTimestamp: false, useWorkspaceInPromotion: false, verbose: true)])
+            }
+        }
+    }
+}

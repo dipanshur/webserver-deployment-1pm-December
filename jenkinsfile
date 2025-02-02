@@ -3,7 +3,8 @@ pipeline {
     stages {
         stage('SCM Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/dipanshur/webserver-deployment-1pm-December.git'
+                git branch: 'main'
+                url: 'https://github.com/dipanshur/webserver-deployment-1pm-December.git'
                 credentialsId: '16856fa6-e38a-4867-a5e6-229c84becb92'
             }
         }

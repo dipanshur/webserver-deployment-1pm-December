@@ -88,15 +88,15 @@
         <div class="content">
             <h2>Our Latest Features</h2>
             <div class="card">
-                <h3>Feature 1</h3>
+                <h3>Savings Account</h3>
                 <p>This is an awesome feature that helps you do XYZ!</p>
             </div>
             <div class="card">
-                <h3>Feature 2</h3>
+                <h3>Loan Application</h3>
                 <p>This feature allows you to perform ABC tasks effortlessly.</p>
             </div>
             <div class="card">
-                <h3>Feature 3</h3>
+                <h3>Insurance Portal 3</h3>
                 <p>Our app comes with an intuitive UI that makes your experience smooth.</p>
             </div>
         </div>

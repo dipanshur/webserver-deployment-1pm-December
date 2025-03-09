@@ -1,0 +1,7 @@
+- hosts: all
+  become: yes
+  tasks: 
+  - name: Create Docker Container
+    shell: docker run -d --name web_tom_con -p 1234:8080 dipanshur/web_tom_con_image:v1.0
+  - name: Print Deployment of Container Done
+    shell: echo "Winner Winner Paneer Dinner"
